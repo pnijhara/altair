@@ -48,7 +48,7 @@ class SchemaGenerator(codegen.SchemaGenerator):
     def _process_description(self, description):
         description = "".join(
             reSpecial.sub("", d) if i % 2 else d
-                for i, d in enumerate(reLink.split(description))
+            for i, d in enumerate(reLink.split(description))
         )  # remove formatting from links
         description = m2r.convert(description)
         description = description.replace(m2r.prolog, "")
