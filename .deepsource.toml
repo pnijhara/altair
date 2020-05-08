@@ -2,7 +2,8 @@ version = 1
 
 test_patterns = [
     "*/tests/**",
-    "altair/*/tests/**"
+    "*/*/tests/**",
+    "*/*/*/tests/**"
 ]
 
 exclude_patterns = ["*/examples/**"]
